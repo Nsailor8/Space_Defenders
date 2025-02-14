@@ -18,9 +18,9 @@ public class EnemyShip extends Entity{
 		super(gp);
 		direction = "down";
 		speed = 2;
-	//	maxLife =  1;
-		//life = maxLife;
-		//solidArea =  new Rectangle(0,0,48,48);
+		maxLife =  1;
+		life = maxLife;
+		solidArea =  new Rectangle(0,0,48,48);
 		getImage();
 	}
 	public void getImage() {
@@ -49,26 +49,25 @@ public class EnemyShip extends Entity{
 		}
 	}	
 		
-//		  g2.setColor(Color.YELLOW);
-//	        for (Rectangle bullet : bullets) {
-//	            g2.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
-//	        }
-//		actionLock1++;
-//		
-//		if (actionLock1 == 120) {
-//			direction = "right";
-//			actionLock1 = 0;
-//		}	
-//	}
-//	public void draw(Graphics2D g2) {
-//		BufferedImage image = ship;
-//		g2.drawImage(image, 100, 100, gp.tileSize, gp.tileSize, null);
-//	}
+		  g2.setColor(Color.YELLOW);
+       for (Rectangle bullet : bullets) {
+	            g2.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
+	        }
+		actionLock1++;
 		
-//		  g2.setColor(Color.YELLOW);
-//	        for (Rectangle bullet : bullets) {
-//	            g2.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
-//	        }
+		if (actionLock1 == 120) {
+			direction = "right";
+			actionLock1 = 0;
+			}	
+	public void draw(Graphics2D g2) {
+		BufferedImage image = ship;
+		g2.drawImage(image, 100, 100, gp.tileSize, gp.tileSize, null);
+	}
+		
+		  g2.setColor(Color.YELLOW);
+	        for (Rectangle bullet : bullets) {
+	            g2.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
+	        }
 		
 		
 	
